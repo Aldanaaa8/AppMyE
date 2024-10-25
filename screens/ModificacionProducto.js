@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 20,
     borderRadius: 10,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Negro con transparencia
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Negro con transparencia
     color: '#FFF', // Texto blanco
   },
   error: {
