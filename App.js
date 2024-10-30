@@ -4,7 +4,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import ButtonGradient from './ButtonGradient';
 import Opciones from './screens/option'; 
-import Inicio from './screens/option';
+import Inicio from './screens/Inicio';
+import Categoria from './screens/Categoria';
+import Producto from './screens/Producto';
 import AltaProducto from './screens/AltaProducto';
 import BajaProducto from './screens/BajaProducto';
 import ModificacionProducto from './screens/ModificacionProducto';
@@ -45,9 +47,11 @@ function HomeScreen({ navigation }) {  // Asegúrate de recibir la prop navigati
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        {/* Pantalla principal */}
-        <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Navigator initialRouteName="Inicio">
+        {/* oculta "Inicio" */}
+        <Stack.Screen name="Inicio" component={Inicio} options={{headerShown: false}}/> 
+        <Stack.Screen name="Categoria" component={Categoria} options={{headerShown: false}}/>
+        <Stack.Screen name="Producto" component={Producto} />
         {/* Pantalla opciones */}
         <Stack.Screen name="Opciones" component={Opciones} />
         <Stack.Screen name="AltaProducto" component={AltaProducto} />
