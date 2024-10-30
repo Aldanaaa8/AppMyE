@@ -47,9 +47,12 @@ function HomeScreen({ navigation }) {  // Asegúrate de recibir la prop navigati
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Inicio">
-        {/* oculta "Inicio" */}
+      <Stack.Navigator initialRouteName="Home">
+        {/* Pantalla Login */}
+        <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
+        {/* Pantalla de Inicio */}
         <Stack.Screen name="Inicio" component={Inicio} options={{headerShown: false}}/> 
+        {/* oculta "Inicio" */}
         <Stack.Screen name="Categoria" component={Categoria} options={{headerShown: false}}/>
         <Stack.Screen name="Producto" component={Producto} />
         {/* Pantalla opciones */}
