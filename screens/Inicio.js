@@ -39,9 +39,9 @@ export default function Inicio({ navigation }) {
           showsHorizontalScrollIndicator={false} 
           style={styles.carousel}
         >
-          <Image source={require('../assets/Ofertas/o1.png')} style={styles.carouselImage} />
-          <Image source={require('../assets/Ofertas/o1.png')} style={styles.carouselImage} />
-          <Image source={require('../assets/Ofertas/o1.png')} style={styles.carouselImage} />
+          <Image source={require('../assets/OfertasCarrusel/o1.png')} style={styles.carouselImage} />
+          <Image source={require('../assets/OfertasCarrusel/o1.png')} style={styles.carouselImage} />
+          <Image source={require('../assets/OfertasCarrusel/o1.png')} style={styles.carouselImage} />
         </ScrollView>
 
         {/* Categorías */}
