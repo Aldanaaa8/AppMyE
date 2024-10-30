@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import ButtonGradient from './ButtonGradient';
 import Opciones from './screens/option'; 
+import Inicio from './screens/option';
 import AltaProducto from './screens/AltaProducto';
 import BajaProducto from './screens/BajaProducto';
 import ModificacionProducto from './screens/ModificacionProducto';
