@@ -60,7 +60,7 @@ const ModificacionProducto = () => {
         onChangeText={setDescription}
       />
 
-      <Button title="Guardar Cambios" onPress={handleSave} color="#4B8E00" />
+      <Button title="Guardar Cambios" onPress={handleSave} color="#000" />
       
       {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
     </View>
@@ -90,15 +90,28 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     padding: 10,
     marginBottom: 20,
-    borderRadius: 10,
+    borderRadius: 20,
     backgroundColor: 'rgba(0, 0, 0, 0.5)', // Negro con transparencia
     color: '#FFF', // Texto blanco
+  },
+  saveButton: {
+    backgroundColor: '#154900', // Verde más oscuro
+    paddingVertical: 15,
+    borderRadius: 50, // Esquinas redondeadas
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  saveButtonText: {
+    color: '#FFF',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
   error: {
     color: 'red',
     textAlign: 'center',
     marginBottom: 10,
   },
+  
 });
 
 export default ModificacionProducto;

@@ -51,7 +51,13 @@ export default function App() {
         <Stack.Screen name="Opciones" component={Opciones} />
         <Stack.Screen name="AltaProducto" component={AltaProducto} />
         <Stack.Screen name="BajaProducto" component={BajaProducto} />
-        <Stack.Screen name="ModificacionProducto" component={ModificacionProducto} />
+       
+         {/* Quitar encabezado en ModificacionProducto */}
+         <Stack.Screen 
+          name="ModificacionProducto" 
+          component={ModificacionProducto} 
+          options={{ headerShown: false }} // Desactiva el encabezado
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
