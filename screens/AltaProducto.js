@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 
@@ -47,6 +48,16 @@ export default function AltaProducto() {
       />
 
       <Button title="Agregar Producto" color="#446311" onPress={handleAltaProducto} />
+=======
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+export default function AltaProducto() {
+  return (
+    <View style={styles.container}>
+      <Text>Alta de Productos</Text>
+      {/* Aquí puedes agregar el formulario o la funcionalidad para dar de alta productos */}
+>>>>>>> eea3c5728ceb2d66777330b70aee9c888fdacb18
     </View>
   );
 }
@@ -54,6 +65,7 @@ export default function AltaProducto() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+<<<<<<< HEAD
     backgroundColor: '#89C922',  // Fondo verde claro
     alignItems: 'center',
     justifyContent: 'center',
@@ -72,5 +84,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 10,
     marginBottom: 15,
+=======
+    justifyContent: 'center',
+    alignItems: 'center',
+>>>>>>> eea3c5728ceb2d66777330b70aee9c888fdacb18
   },
 });
